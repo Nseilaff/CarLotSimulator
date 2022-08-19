@@ -8,9 +8,13 @@ namespace CarLotSimulator
     {
         public Car()
         {
-            Year = Year;
-            Make = Make;
-            Model = Model;
+
+        }
+        public Car(int year, string make, string model)
+        {
+            Year = year;
+            Make = make;
+            Model = model;
 
         }
         public int Year { get; set; }
