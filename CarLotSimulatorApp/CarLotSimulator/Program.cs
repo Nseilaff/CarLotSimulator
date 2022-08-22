@@ -62,16 +62,25 @@ namespace CarLotSimulator
             carLot.Add(car5);
 
 
+
             Car car6 = new Car();
             car6.Year = 2004;
             car6.Make = "Audi";
             car6.Model = "a4";
             carLot.Add(car6);
+            Carlot.numberOfCars++;
+            Console.WriteLine(Carlot.numberOfCars);
 
             Car car7 = new Car(1967, "Chevrolet", "Chevelle");
             carLot.Add(car7);
+            Carlot.numberOfCars++;
+            Console.WriteLine(Carlot.numberOfCars);
 
-            
+           Car car8 = new Car(2022, "Toyota", "Supra");
+            Carlot.numberOfCars++;
+
+            Console.WriteLine(Carlot.numberOfCars);
+
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
             //*************BONUS X 2*************//
