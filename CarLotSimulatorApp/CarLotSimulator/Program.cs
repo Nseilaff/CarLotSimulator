@@ -68,18 +68,14 @@ namespace CarLotSimulator
             car6.Make = "Audi";
             car6.Model = "a4";
             carLot.Add(car6);
-            Carlot.numberOfCars++;
-            Console.WriteLine(Carlot.numberOfCars);
+            
 
             Car car7 = new Car(1967, "Chevrolet", "Chevelle");
             carLot.Add(car7);
-            Carlot.numberOfCars++;
-            Console.WriteLine(Carlot.numberOfCars);
+            
 
            Car car8 = new Car(2022, "Toyota", "Supra");
-            Carlot.numberOfCars++;
-
-            Console.WriteLine(Carlot.numberOfCars);
+            
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
@@ -91,6 +87,8 @@ namespace CarLotSimulator
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
             foreach (var car in carLot)
             {
+                Carlot.numberOfCars++;
+                Console.WriteLine($"{Carlot.numberOfCars}: ");
                 Console.WriteLine($"{car.Year}\n{car.Make}\n{car.Model}");
                 Console.WriteLine();
             }
